@@ -26,7 +26,7 @@ uploaded_file = st.file_uploader("Elige una imagen...", type=["png", "jpg", "jpe
 if uploaded_file is not None:
     # Mostrar imagen
     image = Image.open(uploaded_file)
-    st.image(image, caption='Imagen subida.', use_column_width=True)
+    st.image(image, caption="Imagen subida.", use_container_width=True)
     
     # Preprocesamiento
     img = image.resize((32, 32))
